@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // const mongodbURL = process.env.mongodbURL;
-const mongodbURL = 'mongodb://127.0.0.1:27017/ResturentDB';
+const mongodbURL = process.env.mongodb_URL
 mongoose.connect(mongodbURL);
 
 const db = mongoose.connection; 
